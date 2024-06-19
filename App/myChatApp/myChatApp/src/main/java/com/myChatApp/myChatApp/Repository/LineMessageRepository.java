@@ -9,6 +9,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 public interface LineMessageRepository extends MongoRepository<Message, String> {
-
     List<Message> findByuserId(String userId);
 }
